@@ -1,6 +1,6 @@
 // API, constants, and reusable UI primitives used by Layout and page components.
 
-const API = "https://vercel-backend-pi-amber.vercel.app/";
+const API = "https://vercel-backend-pi-amber.vercel.app";
 
 export const api = {
   get: (path) => fetch(`${API}${path}`).then(r => r.ok ? r.json() : r.json().then(e => { throw new Error(e.detail || "Request failed") })),
